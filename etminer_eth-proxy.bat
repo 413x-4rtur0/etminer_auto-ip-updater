@@ -27,5 +27,5 @@ setx GPU_USE_SYNC_OBJECTS 1
 setx GPU_MAX_ALLOC_PERCENT 100
 setx GPU_SINGLE_ALLOC_PERCENT 100
 
-start /wait /b ethminer.exe --cl-local-work 240 --farm-recheck 1000 -G -F http://%ipv4%:%port%/%client% 
+start /wait /b ethminer.exe --cl-local-work 256 --farm-recheck 200 -G -F http://%ipv4%:%port%/%client% 
 wmic process where name="ethminer.exe" CALL setpriority 256
